@@ -1,0 +1,21 @@
+<h1>Sign up</h1>
+
+<form method="post" action="/users/new">
+  <p class="error"></p>
+  
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username" value="<%=h params[:username] %>">
+  
+  <label for="email">Email</label>
+  <input type="text" name="email" id="email" value="<%=h params[:email] %>">
+  
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password">
+  
+  <input type="submit" value="Sign up">
+</form>
+
+<script type="text/javascript">
+  App.setupListeners($('form'));
+</script>
+
