@@ -1,3 +1,5 @@
+JS.cacheBust = true
+
 JS.Packages(function() { with(this) {
   var ROOT = JS.ENV.ROOT || '.'
   

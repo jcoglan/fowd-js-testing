@@ -18,6 +18,7 @@ describe App do
   
   it "does not allow sign-up without a username" do
     visit "/signup"
+    fill_in "Username", :with => ""
     fill_in "Email", :with => "jcoglan@mailinator.com"
     fill_in "Password", :with => "correct horse battery staple"
     click_button "Sign up"
