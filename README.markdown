@@ -6,6 +6,10 @@ topic of JavaScript testing. It's a tiny Sinatra app that serves a sign-up page
 for users to register. The sign-up page uses JavaScript form validation, and
 this app contains several ways to test the code.
 
+You might also find my series on [refactoring towards testable
+JavaScript](http://blog.jcoglan.com/2011/07/14/refactoring-towards-testable-javascript-part-1/)
+useful, and it covers how to use the tools mentioned in my talk in more depth.
+
 
 ## Setting up
 
