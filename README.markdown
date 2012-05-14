@@ -21,7 +21,6 @@ parts of the demo.
     cd fowd-js-testing
     gem install bundler
     bundle
-    npm install jsclass
 
 
 ## Running the tests
