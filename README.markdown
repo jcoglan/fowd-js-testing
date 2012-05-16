@@ -17,15 +17,31 @@ Download the code, and get its dependencies installed. You'll need [Ruby](http:/
 [Node.js](http://nodejs.org) and [PhantomJS](http://phantomjs.org/) for various
 parts of the demo.
 
+If all you want to do is run the JavaScript unit tests, you don't need to
+install anything - just clone the repo and run `open spec/js/browser.html`.
+
     git clone git://github.com/jcoglan/fowd-js-testing.git
     cd fowd-js-testing
     gem install bundler
     bundle
 
 
+## Browsing the code
+
+Here's where to find various parts of the application. It's very small, so
+there's not a lot of files to wade through.
+
+* `lib/` - Ruby files for the server-side portion of the app
+* `lib/views/` - page templates that the server renders
+* `lib/public/` - JavaScript code used on the client side
+* `spec/` - Ruby files used to run full-stack tests
+* `spec/js/` - HTML and JavaScript for running JS unit tests
+
+
 ## Running the tests
 
-To run the full-stack Selenium tests:
+If you've installed the Ruby dependencies, you can run the full-stack Selenium
+tests:
 
     bundle exec rspec -cf nested spec
 
